@@ -6,7 +6,7 @@ pipeline {
          stage('perform testing') {
             steps {
                 bat "cd C://Users//vuchander//Jenkins//Tests"
-                bat "robot -d results SingleTestAndroid.robot"
+                bat "robot -d results tests//SingleTestAndroid.robot"
             }
         }
     }
