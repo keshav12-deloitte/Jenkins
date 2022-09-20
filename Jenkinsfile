@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('delete if exist and clone') {
             steps {
-                System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
+//                 System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
                 bat "cd C://Users//vuchander"
                 bat "del Jenkins"
                 bat "Y"
