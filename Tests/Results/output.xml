@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.2 on win32)" generated="20220912 13:33:49.322" rpa="false" schemaversion="3">
-<suite id="s1" name="SingleTestAndroid" source="C:\Users\vuchander\POD5_Mobile_libs\Tests\SingleTestAndroid.robot">
-<test id="s1-t1" name="To check whether we can successfully login with incorrect Credentials" line="16">
+<robot generator="Robot 5.0.1 (Python 3.10.2 on win32)" generated="20220920 13:43:44.723" rpa="false" schemaversion="3">
+<suite id="s1" name="SingleTestAndroid" source="C:\Users\vuchander\Jenkins\tests\SingleTestAndroid.robot">
+<test id="s1-t1" name="To check whether we can successfully login with correct Credentials" line="10">
 <kw name="Open app" library="cloud_Providers">
 <arg>BrowserStack</arg>
 <kw name="Run Keyword If" library="BuiltIn">
@@ -21,123 +21,197 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20220912 13:33:49.509" endtime="20220912 13:34:22.312"/>
+<status status="PASS" starttime="20220920 13:43:44.987" endtime="20220920 13:44:17.159"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220912 13:34:27.314" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220912 13:34:22.312" endtime="20220912 13:34:27.314"/>
+<msg timestamp="20220920 13:44:22.164" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220920 13:44:17.159" endtime="20220920 13:44:22.164"/>
 </kw>
-<status status="PASS" starttime="20220912 13:33:49.509" endtime="20220912 13:34:27.315"/>
+<status status="PASS" starttime="20220920 13:43:44.987" endtime="20220920 13:44:22.164"/>
 </kw>
-<status status="PASS" starttime="20220912 13:33:49.509" endtime="20220912 13:34:27.315"/>
+<status status="PASS" starttime="20220920 13:43:44.987" endtime="20220920 13:44:22.164"/>
 </kw>
-<status status="PASS" starttime="20220912 13:33:49.509" endtime="20220912 13:34:27.316"/>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>"${cloud_name}"=="Perfecto"</arg>
+<arg>Open app with Perfecto</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20220920 13:44:22.164" endtime="20220920 13:44:22.164"/>
+</kw>
+<status status="PASS" starttime="20220920 13:43:44.987" endtime="20220920 13:44:22.164"/>
 </kw>
 <kw name="login with credientials" library="robertApp">
-<arg>vfappiumtesting7@gmail.com</arg>
-<arg>appium</arg>
+<arg>appiumtesting7@gmail.com</arg>
+<arg>appiumtesting7</arg>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${open_Space_Btn}</arg>
 <arg>15s</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220912 13:34:27.317" endtime="20220912 13:34:28.459"/>
+<status status="PASS" starttime="20220920 13:44:22.168" endtime="20220920 13:44:22.999"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${open_Space_Btn}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220912 13:34:28.460" level="INFO">Clicking element '//*[@resource-id="new-server-view-open"]'.</msg>
-<status status="PASS" starttime="20220912 13:34:28.459" endtime="20220912 13:34:30.182"/>
+<msg timestamp="20220920 13:44:23.015" level="INFO">Clicking element '//*[@resource-id="new-server-view-open"]'.</msg>
+<status status="PASS" starttime="20220920 13:44:22.999" endtime="20220920 13:44:23.906"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${login_Btn}</arg>
 <arg>15s</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220912 13:34:30.182" endtime="20220912 13:34:51.470"/>
+<msg timestamp="20220920 13:44:40.130" level="INFO">&lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
+&lt;hierarchy index="0" class="hierarchy" rotation="0" width="1080" height="2115"&gt;
+  &lt;android.widget.FrameLayout index="0" package="chat.rocket.android" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2115]" displayed="true"&gt;
+    &lt;android.widget.LinearLayout index="0" package="chat.rocket.android" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2115]" displayed="true"&gt;
+      &lt;android.widget.FrameLayout index="0" package="chat.rocket.android" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+        &lt;android.widget.LinearLayout index="0" package="chat.rocket.android" class="android.widget.LinearLayout" text="" resource-id="chat.rocket.android:id/action_bar_root" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+          &lt;android.widget.FrameLayout index="0" package="chat.rocket.android" class="android.widget.FrameLayout" text="" resource-id="android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+            &lt;android.widget.FrameLayout index="0" package="chat.rocket.android" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+              &lt;android.view.ViewGroup index="0" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                &lt;android.view.ViewGroup index="0" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                  &lt;android.view.ViewGroup index="0" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                    &lt;android.view.ViewGroup index="1" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                      &lt;android.view.ViewGroup index="0" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                        &lt;android.view.ViewGroup index="0" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                          &lt;android.view.ViewGroup index="0" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                            &lt;android.view.ViewGroup index="0" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                              &lt;android.view.ViewGroup index="1" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                                &lt;android.view.ViewGroup index="0" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                                  &lt;android.view.ViewGroup index="0" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                                    &lt;android.view.ViewGroup index="0" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                                      &lt;android.view.ViewGroup index="0" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                                        &lt;android.view.ViewGroup index="1" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                                          &lt;android.view.ViewGroup index="0" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                                            &lt;android.view.ViewGroup index="0" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                                              &lt;android.view.ViewGroup index="0" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                                                &lt;android.widget.ScrollView index="0" package="chat.rocket.android" class="android.widget.ScrollView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                                                  &lt;android.view.ViewGroup index="0" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                                                    &lt;android.widget.ScrollView index="0" package="chat.rocket.android" class="android.widget.ScrollView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                                                      &lt;android.view.ViewGroup index="0" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,81][1080,2115]" displayed="true"&gt;
+                                                        &lt;android.view.ViewGroup index="0" package="chat.rocket.android" class="android.view.ViewGroup" text="" resource-id="new-server-view" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[45,126][1035,2106]" displayed="true"&gt;
+                                                          &lt;android.widget.ImageView index="0" package="chat.rocket.android" class="android.widget.ImageView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[381,237][699,554]" displayed="true" /&gt;
+                                                          &lt;android.widget.TextView index="1" package="chat.rocket.android" class="android.widget.TextView" text="Rocket.Chat" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[359,586][721,663]" displayed="true" /&gt;
+                                                          &lt;android.widget.TextView index="2" package="chat.rocket.android" class="android.widget.TextView" text="Beyond Team Collaboration" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[246,688][834,745]" displayed="true" /&gt;
+                                                          &lt;android.view.ViewGroup index="3" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[45,840][1035,1063]" displayed="true"&gt;
+                                                            &lt;android.widget.TextView index="0" package="chat.rocket.android" class="android.widget.TextView" text="Enter workspace URL" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[45,840][1035,889]" displayed="true" /&gt;
+                                                            &lt;android.widget.EditText index="1" package="chat.rocket.android" class="android.widget.EditText" text="Ex. your-company.rocket.chat" content-desc="Ex. your-company.rocket.chat" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[45,919][1035,1063]" displayed="true" /&gt;
+                                                          &lt;/android.view.ViewGroup&gt;
+                                                          &lt;android.view.ViewGroup index="4" package="chat.rocket.android" class="android.view.ViewGroup" text="" resource-id="new-server-view-button" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[45,1114][1035,1258]" displayed="true"&gt;
+                                                            &lt;android.widget.TextView index="0" package="chat.rocket.android" class="android.widget.TextView" text="Connect" content-desc="Connect" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[87,1158][993,1215]" displayed="true" /&gt;
+                                                          &lt;/android.view.ViewGroup&gt;
+                                                          &lt;android.view.ViewGroup index="5" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[45,1353][471,1356]" displayed="true" /&gt;
+                                                          &lt;android.widget.TextView index="6" package="chat.rocket.android" class="android.widget.TextView" text="OR" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[513,1330][568,1379]" displayed="true" /&gt;
+                                                          &lt;android.view.ViewGroup index="7" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[610,1353][1035,1356]" displayed="true" /&gt;
+                                                          &lt;android.widget.TextView index="8" package="chat.rocket.android" class="android.widget.TextView" text="Join our open workspace to chat with the Rocket.Chat team and community." checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[45,1451][1035,1549]" displayed="true" /&gt;
+                                                          &lt;android.view.ViewGroup index="9" package="chat.rocket.android" class="android.view.ViewGroup" text="" resource-id="new-server-view-open" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[45,1600][1035,1744]" displayed="true"&gt;
+                                                            &lt;android.widget.FrameLayout index="0" package="chat.rocket.android" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[510,1642][570,1702]" displayed="true"&gt;
+                                                              &lt;android.widget.ProgressBar index="0" package="chat.rocket.android" class="android.widget.ProgressBar" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[510,1642][570,1702]" displayed="true" /&gt;
+                                                            &lt;/android.widget.FrameLayout&gt;
+                                                          &lt;/android.view.ViewGroup&gt;
+                                                          &lt;android.widget.TextView index="10" package="chat.rocket.android" class="android.widget.TextView" text="Do you have a certificate?" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[318,1873][763,1919]" displayed="true" /&gt;
+                                                          &lt;android.view.ViewGroup index="11" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[348,1919][733,1965]" displayed="true"&gt;
+                                                            &lt;android.view.ViewGroup index="0" package="chat.rocket.android" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[348,1919][733,1965]" displayed="true"&gt;
+                                                              &lt;android.widget.TextView index="0" package="chat.rocket.android" class="android.widget.TextView" text="Apply Your Certificate" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[348,1919][733,1965]" displayed="true" /&gt;
+                                                            &lt;/android.view.ViewGroup&gt;
+                                                          &lt;/android.view.ViewGroup&gt;
+                                                          &lt;android.widget.TextView index="12" package="chat.rocket.android" class="android.widget.TextView" text="Version: 4.20.0.26005" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[349,2060][731,2106]" displayed="true" /&gt;
+                                                        &lt;/android.view.ViewGroup&gt;
+                                                      &lt;/android.view.ViewGroup&gt;
+                                                    &lt;/android.widget.ScrollView&gt;
+                                                  &lt;/android.view.ViewGroup&gt;
+                                                &lt;/android.widget.ScrollView&gt;
+                                              &lt;/android.view.ViewGroup&gt;
+                                            &lt;/android.view.ViewGroup&gt;
+                                          &lt;/android.view.ViewGroup&gt;
+                                        &lt;/android.view.ViewGroup&gt;
+                                      &lt;/android.view.ViewGroup&gt;
+                                    &lt;/android.view.ViewGroup&gt;
+                                  &lt;/android.view.ViewGroup&gt;
+                                &lt;/android.view.ViewGroup&gt;
+                              &lt;/android.view.ViewGroup&gt;
+                            &lt;/android.view.ViewGroup&gt;
+                          &lt;/android.view.ViewGroup&gt;
+                        &lt;/android.view.ViewGroup&gt;
+                      &lt;/android.view.ViewGroup&gt;
+                    &lt;/android.view.ViewGroup&gt;
+                  &lt;/android.view.ViewGroup&gt;
+                &lt;/android.view.ViewGroup&gt;
+              &lt;/android.view.ViewGroup&gt;
+            &lt;/android.widget.FrameLayout&gt;
+          &lt;/android.widget.FrameLayout&gt;
+        &lt;/android.widget.LinearLayout&gt;
+      &lt;/android.widget.FrameLayout&gt;
+    &lt;/android.widget.LinearLayout&gt;
+    &lt;android.view.View index="1" package="chat.rocket.android" class="android.view.View" text="" resource-id="android:id/statusBarBackground" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,81]" displayed="true" /&gt;
+  &lt;/android.widget.FrameLayout&gt;
+&lt;/hierarchy&gt;</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220920 13:44:41.349" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220920 13:44:40.130" endtime="20220920 13:44:41.349"/>
+</kw>
+<msg timestamp="20220920 13:44:41.349" level="FAIL">Element locator '//*[@resource-id="workspace-view-login"]' did not match any elements after 15 seconds</msg>
+<status status="FAIL" starttime="20220920 13:44:23.906" endtime="20220920 13:44:41.349"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${login_Btn}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220912 13:34:51.476" level="INFO">Clicking element '//*[@resource-id="workspace-view-login"]'.</msg>
-<status status="PASS" starttime="20220912 13:34:51.470" endtime="20220912 13:34:52.821"/>
+<status status="NOT RUN" starttime="20220920 13:44:41.349" endtime="20220920 13:44:41.349"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${username_Field}</arg>
 <arg>15s</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220912 13:34:52.821" endtime="20220912 13:34:55.169"/>
+<status status="NOT RUN" starttime="20220920 13:44:41.349" endtime="20220920 13:44:41.349"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${username_Field}</arg>
 <arg>${username}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220912 13:34:55.171" level="INFO">Typing text 'vfappiumtesting7@gmail.com' into text field '//*[@content-desc="Username or email"]'</msg>
-<status status="PASS" starttime="20220912 13:34:55.169" endtime="20220912 13:34:56.666"/>
+<status status="NOT RUN" starttime="20220920 13:44:41.349" endtime="20220920 13:44:41.349"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${password_Field}</arg>
 <arg>15s</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220912 13:34:56.666" endtime="20220912 13:34:57.839"/>
+<status status="NOT RUN" starttime="20220920 13:44:41.349" endtime="20220920 13:44:41.349"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${password_Field}</arg>
 <arg>${password}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220912 13:34:57.843" level="INFO">Typing text 'appium' into text field '//*[@content-desc="Password"]'</msg>
-<status status="PASS" starttime="20220912 13:34:57.840" endtime="20220912 13:34:59.440"/>
+<status status="NOT RUN" starttime="20220920 13:44:41.349" endtime="20220920 13:44:41.349"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${submit_btn}</arg>
 <arg>15s</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220912 13:34:59.440" endtime="20220912 13:35:00.971"/>
+<status status="NOT RUN" starttime="20220920 13:44:41.349" endtime="20220920 13:44:41.349"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${submit_btn}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220912 13:35:00.973" level="INFO">Clicking element '//*[@resource-id="login-view-submit"]'.</msg>
-<status status="PASS" starttime="20220912 13:35:00.971" endtime="20220912 13:35:02.313"/>
+<status status="NOT RUN" starttime="20220920 13:44:41.349" endtime="20220920 13:44:41.349"/>
 </kw>
-<status status="PASS" starttime="20220912 13:34:27.317" endtime="20220912 13:35:02.313"/>
-</kw>
-<kw name="validate error message is displayed successfully" library="robertApp">
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>${error_msg}</arg>
-<arg>15s</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220912 13:35:02.316" endtime="20220912 13:35:04.991"/>
-</kw>
-<kw name="Element Text Should Be" library="AppiumLibrary">
-<arg>${error_msg}</arg>
-<arg>Your credentials were rejected! Please try again.</arg>
-<doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
-<msg timestamp="20220912 13:35:04.992" level="INFO">Verifying element '//*[@resource-id="android:id/message"]' contains exactly text 'Your credentials were rejected! Please try again.'.</msg>
-<status status="PASS" starttime="20220912 13:35:04.991" endtime="20220912 13:35:06.794"/>
-</kw>
-<status status="PASS" starttime="20220912 13:35:02.315" endtime="20220912 13:35:06.794"/>
+<status status="FAIL" starttime="20220920 13:44:22.164" endtime="20220920 13:44:41.364"/>
 </kw>
 <kw name="Close app" library="KeywordsFile">
-<kw name="Close Application" library="AppiumLibrary">
-<doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20220912 13:35:06.795" endtime="20220912 13:35:08.376"/>
+<status status="NOT RUN" starttime="20220920 13:44:41.364" endtime="20220920 13:44:41.364"/>
 </kw>
-<status status="PASS" starttime="20220912 13:35:06.795" endtime="20220912 13:35:08.376"/>
-</kw>
-<doc>This test case is used to verify whether we error message is displayed when we login with incorrect username and password</doc>
-<status status="PASS" starttime="20220912 13:33:49.508" endtime="20220912 13:35:08.377"/>
+<doc>This test case verifies whether we can successfully login with correct username and password</doc>
+<status status="FAIL" starttime="20220920 13:43:44.987" endtime="20220920 13:44:41.364">Element locator '//*[@resource-id="workspace-view-login"]' did not match any elements after 15 seconds</status>
 </test>
-<status status="PASS" starttime="20220912 13:33:49.324" endtime="20220912 13:35:08.379"/>
+<status status="FAIL" starttime="20220920 13:43:44.723" endtime="20220920 13:44:41.364"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="SingleTestAndroid">SingleTestAndroid</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="SingleTestAndroid">SingleTestAndroid</stat>
 </suite>
 </statistics>
 <errors>
