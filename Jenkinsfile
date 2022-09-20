@@ -5,8 +5,7 @@ pipeline {
         stage('delete if exist and clone') {
             steps {
                 bat "cd C://Users//vuchander"
-                bat "del Jenkins"
-                bat "Y"
+                bat "del Jenkins   Y"
                 bat "git clone https://github.com/keshav12-deloitte/Jenkins.git"
             }
         }
